@@ -25,6 +25,9 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.2.5",
+    "@embroider/compat": "^0.44.1",
+    "@embroider/core": "^0.44.1",
+    "@embroider/webpack": "^0.44.1",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.1.0",
@@ -34,6 +37,7 @@
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.3",
     "ember-cli-dependency-checker": "^3.2.0",
+    "ember-cli-fastboot": "^2.2.3",
     "ember-cli-htmlbars": "^5.7.1",
     "ember-cli-inject-live-reload": "^2.0.2",
     "ember-cli-sri": "^2.1.1",
@@ -48,7 +52,6 @@
     "ember-resolver": "^8.0.2",
     "ember-source": "~3.26.1",
     "ember-template-lint": "^3.2.0",
-    "ember-welcome-page": "^4.0.0",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-ember": "^10.3.0",
@@ -58,12 +61,24 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "qunit": "^2.14.1",
-    "qunit-dom": "^1.6.0"
+    "qunit-dom": "^1.6.0",
+    "webpack": "^5.52.0"
   },
   "engines": {
     "node": "10.* || >= 12"
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "fastboot": "^3.1.2"
+  },
+  "resolutions": {
+    "**/*/fastboot": "^3.1.2"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/foo"
+    ]
   }
 }
